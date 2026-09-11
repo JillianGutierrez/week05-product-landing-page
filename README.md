@@ -1,11 +1,5 @@
 # Coffee Break By: Maus Foodhouse atbp.
 
-## ITST 302 - Week 5 Product Landing Page
-
-A responsive product landing page created for **Coffee Break By: Maus Foodhouse atbp.**, a local food and beverage business located at **Plaza of Magdalena, Laguna**.
-
----
-
 # 1. Introduction
 
 ## What is a Product Landing Page?
