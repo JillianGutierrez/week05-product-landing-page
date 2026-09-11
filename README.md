@@ -1,8 +1,3 @@
-Absolutely. Here is the **complete final `README.md`**, with **everything inside one Markdown code block** and the **exact screenshot filenames** you provided.
-
-Copy the whole thing and paste it directly into your `README.md`.
-
-````markdown
 # Coffee Break By: Maus Foodhouse atbp.
 
 ## ITST 302 - Week 5 Product Landing Page
