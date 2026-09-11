@@ -1,0 +1,127 @@
+@import 'tailwindcss';
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ========================================
+   FULL-SCREEN SOLID NAVBAR
+   ======================================== */
+
+#main-navbar {
+    width: 100%;
+    background-color: #fffaf3 !important;
+    border-bottom: 1px solid #fed7aa !important;
+
+    box-shadow:
+        0 4px 20px rgba(120, 53, 15, 0.10) !important;
+
+    opacity: 1 !important;
+
+    transition:
+        box-shadow 300ms ease,
+        transform 300ms ease;
+}
+
+
+/* Stronger shadow after scrolling */
+
+#main-navbar.navbar-scrolled {
+    background-color: #fffaf3 !important;
+
+    box-shadow:
+        0 8px 25px rgba(120, 53, 15, 0.15) !important;
+}
+
+
+/* ========================================
+   DESKTOP NAVIGATION LINKS
+   ======================================== */
+
+.nav-link {
+    color: #5c4033;
+
+    transition:
+        color 200ms ease,
+        background-color 200ms ease,
+        transform 200ms ease;
+}
+
+.nav-link:hover {
+    color: #ea580c;
+    background-color: #fff1e6;
+
+    transform: translateY(-1px);
+}
+
+
+/* ========================================
+   MOBILE MENU LINKS
+   ======================================== */
+
+.mobile-link {
+    display: block;
+
+    padding: 0.75rem 1rem;
+
+    border-radius: 0.75rem;
+
+    color: #5c4033;
+
+    font-weight: 600;
+
+    transition:
+        background-color 200ms ease,
+        color 200ms ease,
+        transform 200ms ease;
+}
+
+.mobile-link:hover {
+    background-color: #fff1e6;
+    color: #ea580c;
+
+    transform: translateX(3px);
+}
+
+
+/* ========================================
+   MOBILE MENU ANIMATION
+   ======================================== */
+
+#mobile-menu {
+    animation: mobileMenuIn 200ms ease-out;
+}
+
+@keyframes mobileMenuIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* ========================================
+   NAVBAR MOBILE RESPONSIVENESS
+   ======================================== */
+
+@media (max-width: 640px) {
+
+    #main-navbar {
+        box-shadow:
+            0 3px 15px rgba(120, 53, 15, 0.10) !important;
+    }
+
+}
