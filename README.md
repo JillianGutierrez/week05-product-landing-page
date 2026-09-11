@@ -1,531 +1,1067 @@
+Absolutely. Here is the **complete final `README.md`**, with **everything inside one Markdown code block** and the **exact screenshot filenames** you provided.
+
+Copy the whole thing and paste it directly into your `README.md`.
+
+````markdown
 # Coffee Break By: Maus Foodhouse atbp.
-### Responsive Product Landing Page
-**ITST 302 – Client-Server Technologies | Week 5 Mini Project**
+
+## ITST 302 - Week 5 Product Landing Page
+
+A responsive product landing page created for **Coffee Break By: Maus Foodhouse atbp.**, a local food and beverage business located at **Plaza of Magdalena, Laguna**.
 
 ---
 
-## 1. Project Title
+# 1. Introduction
 
-**Coffee Break By: Maus Foodhouse atbp. – Responsive Product Landing Page**
+## What is a Product Landing Page?
 
-Built with **Laravel**, **Tailwind CSS v4**, and **Blade Components**.
+A product landing page is a webpage that presents a product, service, or business in a clear and organized way. It usually contains important information such as the main features, products, pricing, customer feedback, and contact information.
 
----
+For this project, I created a product landing page for **Coffee Break By: Maus Foodhouse atbp.** The website focuses on presenting the business, its food and drinks, pricing options, customer testimonials, and contact information.
 
-## 2. Introduction
+## Why Landing Pages Are Important for Businesses
 
-### What is a Product Landing Page?
+Landing pages are useful for businesses because they give customers a convenient way to learn about the business in one place.
 
-A product landing page is a focused web page designed to introduce, promote, or sell a specific product or service. Unlike a full website, a landing page has a single goal: to capture the visitor's attention and guide them toward a clear action — whether that's making a purchase, signing up, or contacting the business.
+For a food and beverage business, a landing page can help customers:
 
-### Why Are Landing Pages Important for Businesses?
+- Learn more about the business.
+- Explore the available food and drinks.
+- Check prices.
+- Read customer reviews.
+- Find the business location.
+- Check business hours.
+- Contact the business.
 
-In today's digital-first world, most customers discover businesses online before ever visiting in person. A well-designed landing page:
+A good landing page can also help make a small or local business look more professional online.
 
-- Creates a **strong first impression** that reflects the brand's identity
-- Provides **all essential information** in one place (menu, prices, location, contact)
-- Increases **customer trust** through professional presentation
-- Works on **any device** — mobile, tablet, or desktop — reaching more customers
-- Enables small businesses to **compete professionally** online without complex systems
+## Purpose of the Project
 
-For a local business like Coffee Break By: Maus Foodhouse atbp. in Magdalena, Laguna, having an online presence through a well-crafted landing page can significantly increase visibility, attract new customers, and improve customer experience.
+The purpose of this project was to apply the concepts discussed in **ITST 302** by creating a responsive landing page using **Laravel, Blade Components, Tailwind CSS, JavaScript, and Vite**.
 
-### Purpose of This Project
-
-This project was developed as part of ITST 302 – Client-Server Technologies, Week 5 laboratory activity. The goal was to design and develop a modern, responsive product landing page for a real local business using **Laravel Blade Components** and **Tailwind CSS**, following component-based frontend architecture principles.
-
-The chosen business is **Coffee Break By: Maus Foodhouse atbp.**, a food and beverage shop located at the Plaza of Magdalena, Laguna, offering affordable coffee, milk tea, milkshakes, rice meals, burgers, and more.
+I decided to use a real local food business for the project so that the website would have an actual business purpose and realistic content.
 
 ---
 
-## 3. Objectives
+# 2. Objectives
 
-Upon completing this activity, the following learning objectives were accomplished:
+The main objectives I accomplished in this activity were:
 
-1. ✅ Built responsive interfaces using **Tailwind CSS v4** utility classes
-2. ✅ Created reusable **Laravel Blade Components** to eliminate duplicated code
-3. ✅ Applied responsive design principles for **desktop, tablet, and mobile** layouts
-4. ✅ Organized frontend components following **Laravel best practices**
-5. ✅ Implemented consistent UI design using **typography, spacing, colors, and layouts**
-6. ✅ Documented frontend architecture and component design in **README.md**
-7. ✅ Published the project through **GitHub** for portfolio use
-
----
-
-## 4. Responsive Web Design
-
-### Mobile-First Design
-
-This project follows a **mobile-first approach**, which means the base styles are written for small screens first, and larger layouts are added using responsive breakpoints. This ensures the page is usable and visually appealing on smartphones before being enhanced for bigger screens.
-
-Example from `hero.blade.php`:
-```html
-<h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900">
-    Good Food. Great Drinks. Perfect Break.
-</h1>
-```
-The heading starts at `text-4xl` on mobile, scales to `text-5xl` on small screens, and `text-6xl` on large screens.
-
-### Responsive Breakpoints
-
-Tailwind CSS v4 uses the following breakpoints used throughout this project:
-
-| Prefix | Minimum Width | Typical Device |
-|--------|--------------|----------------|
-| _(none)_ | 0px | Mobile (default) |
-| `sm:` | 640px | Large mobile / Small tablet |
-| `md:` | 768px | Tablet |
-| `lg:` | 1024px | Laptop / Small desktop |
-| `xl:` | 1280px | Desktop |
-
-### Flexbox
-
-Flexbox is used for alignment and horizontal/vertical layouts throughout the project. Key usage:
-
-- **Navbar:** `flex items-center justify-between` — aligns logo, nav links, and buttons
-- **Hero buttons:** `flex flex-col sm:flex-row gap-4` — stacks vertically on mobile, horizontal on larger screens
-- **Footer columns:** `flex flex-col gap-3` — stacks list items vertically
-
-### CSS Grid
-
-CSS Grid is used for multi-column section layouts:
-
-- **Features:** `grid sm:grid-cols-2 lg:grid-cols-3` — 1 col → 2 cols → 3 cols
-- **Menu (Product Showcase):** `grid sm:grid-cols-2 lg:grid-cols-4` — up to 4 columns on desktop
-- **Pricing:** `grid md:grid-cols-3` — 3 equal pricing cards on tablet and above
-- **Footer:** `grid sm:grid-cols-2 lg:grid-cols-4` — 4 columns on wide screens
-
-### User Experience (UX)
-
-Responsive design is critical for user experience because:
-
-- Over **60% of web traffic** comes from mobile devices
-- Users abandon sites that are hard to navigate on their phone
-- Google uses **mobile-first indexing**, meaning mobile-friendly sites rank better in search results
-- Consistent layouts across devices build **user trust** in the brand
-
-This project tested responsiveness using **Chrome DevTools** device simulator at 375px (mobile), 768px (tablet), and 1440px (desktop).
+- Create a complete product landing page.
+- Apply responsive web design principles.
+- Create a responsive navigation bar.
+- Create a mobile hamburger menu.
+- Use Laravel Blade Components.
+- Practice reusable component development.
+- Use Tailwind CSS for styling.
+- Apply responsive Tailwind classes.
+- Use Flexbox and CSS Grid.
+- Create desktop, tablet, and mobile layouts.
+- Design a consistent user interface.
+- Add hover effects and transitions.
+- Create a features section.
+- Create a food and drink menu showcase.
+- Create a pricing section with three plans.
+- Create a testimonials section.
+- Create a call-to-action section.
+- Create a responsive footer.
+- Use images to improve the visual presentation.
+- Practice Git and GitHub version control.
+- Organize the project properly.
+- Document the development process.
 
 ---
 
-## 5. Tailwind CSS
+# 3. Responsive Web Design
 
-### Utility-First CSS
+Responsive web design allows a website to adjust its layout depending on the screen size of the device.
 
-Tailwind CSS is a **utility-first CSS framework**, meaning instead of writing custom CSS classes, you compose designs directly in HTML using small, single-purpose utility classes.
+For this project, I tested the website on desktop, tablet, and mobile layouts.
 
-Traditional CSS approach:
-```css
-.hero-title {
-    font-size: 3rem;
-    font-weight: 800;
-    color: #111827;
-    line-height: 1.2;
-}
-```
+## Mobile-First Design
 
-Tailwind approach used in this project:
-```html
-<h1 class="text-5xl font-extrabold text-gray-900 leading-tight">
-```
+The website was designed to remain usable on smaller screens.
 
-### Advantages of Tailwind CSS
+On mobile:
 
-1. **No context switching** — styles are written directly in HTML
-2. **No naming fatigue** — no need to invent class names like `.hero-title-wrapper`
-3. **Responsive by default** — every utility has responsive prefixes (`sm:`, `md:`, `lg:`)
-4. **Consistent design system** — built-in spacing, color, and typography scales
-5. **Small production bundle** — only used classes are included in the final CSS
+- The desktop navigation changes into a hamburger menu.
+- Content is stacked vertically.
+- Cards adjust to the available screen width.
+- Buttons become easier to tap.
+- Images resize properly.
+- Text sizes adjust for smaller screens.
+- Spacing is reduced where needed.
 
-### Responsive Utility Classes
+The mobile layout was tested at approximately:
 
-This project uses responsive prefixes on nearly every layout class:
+**375 × 812 px**
+
+## Responsive Breakpoints
+
+Tailwind CSS responsive breakpoints were used throughout the project.
+
+Some of the responsive classes used include:
+
+```text
+sm
+md
+lg
+````
+
+These were used for different screen sizes and were applied to:
+
+* Navigation
+* Text
+* Cards
+* Images
+* Buttons
+* Section spacing
+* Grid layouts
+
+The tablet layout was tested at approximately:
+
+**768 × 1024 px**
+
+The desktop layout was tested at approximately:
+
+**1440 × 900 px**
+
+## Flexbox
+
+Flexbox was used for areas that needed horizontal or vertical alignment.
+
+For example, the navigation uses Flexbox to align the logo, menu links, and buttons.
+
+Example:
 
 ```html
-<!-- Features grid: 1 col on mobile, 2 on sm, 3 on lg -->
-<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
-
-<!-- Padding that grows with screen size -->
-<div class="px-4 sm:px-6 lg:px-8">
-
-<!-- Image height that scales up -->
-<img class="h-[280px] sm:h-[360px] lg:h-[420px] object-cover">
-```
-
-### Component Styling
-
-Key Tailwind patterns used in components:
-
-| Pattern | Classes Used | Purpose |
-|---------|-------------|---------|
-| Card | `rounded-2xl shadow-md hover:shadow-xl transition` | Elevated card with hover lift |
-| Primary Button | `bg-orange-500 text-white rounded-full hover:bg-orange-600` | Brand-colored CTA |
-| Section Badge | `text-orange-500 font-semibold uppercase tracking-wider text-sm` | Section label |
-| Avatar | `w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center` | Initial-based avatar |
-
----
-
-## 6. Blade Components
-
-### What Are Blade Components?
-
-Blade Components are reusable HTML building blocks in Laravel's templating engine. Instead of copying and pasting the same HTML structure across multiple views, a component is defined once and reused anywhere with a clean, tag-like syntax.
-
-### Why Reusable Components Improve Maintainability
-
-Without components, changing the button style across a landing page would require updating every instance manually. With components, you update **one file** and the change propagates everywhere.
-
-**Before (without components):**
-```html
-<!-- page1.blade.php -->
-<a href="#menu" class="px-7 py-3.5 bg-orange-500 text-white font-semibold rounded-full hover:bg-orange-600 shadow-lg">
-    View Our Menu
-</a>
-
-<!-- page2.blade.php — duplicate! -->
-<a href="#contact" class="px-7 py-3.5 bg-orange-500 text-white font-semibold rounded-full hover:bg-orange-600 shadow-lg">
-    Contact Us
-</a>
-```
-
-**After (with Blade components):**
-```blade
-{{-- button.blade.php defines it once --}}
-<x-button href="#menu">View Our Menu</x-button>
-<x-button href="#contact" variant="secondary">Contact Us</x-button>
-```
-
-### Benefits of Modular UI Development
-
-1. **Single Source of Truth** — change one file, all instances update
-2. **Consistency** — every card, button, and section looks the same throughout the page
-3. **Readability** — `<x-feature-card icon="☕" title="Fresh Coffee" />` is self-documenting
-4. **Scalability** — adding a new pricing plan is one line, not 20 lines of HTML
-5. **Separation of Concerns** — each component is responsible for its own markup
-
-### Components Built in This Project
-
-```
-resources/views/components/
-├── navbar.blade.php          Navigation bar with mobile menu
-├── hero.blade.php            Hero section with CTA buttons
-├── features.blade.php        Features section container
-├── feature-card.blade.php    Reusable feature card (icon, title, desc)
-├── menu.blade.php            Product showcase / menu section
-├── pricing.blade.php         Pricing section container
-├── pricing-card.blade.php    Reusable pricing card (name, price, features)
-├── testimonials.blade.php    Testimonials section container
-├── testimonial-card.blade.php Reusable testimonial card (name, role, message)
-├── cta.blade.php             Call-to-action section
-├── button.blade.php          Reusable button with variant support
-└── footer.blade.php          Site footer
-```
-
-### Sample: `feature-card.blade.php`
-
-```blade
-<div class="bg-white rounded-2xl p-5 sm:p-6 shadow-md hover:shadow-xl
-            transition duration-300 border border-gray-100">
-    <div class="w-14 h-14 rounded-2xl bg-orange-100
-                flex items-center justify-center text-3xl mb-5">
-        {{ $icon }}
-    </div>
-    <h3 class="text-lg sm:text-xl font-bold text-gray-900 mb-3">
-        {{ $title }}
-    </h3>
-    <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
-        {{ $description }}
-    </p>
+<div class="flex items-center justify-between">
+    ...
 </div>
 ```
 
-**Usage:**
-```blade
-<x-feature-card
-    icon="☕"
-    title="Freshly Prepared Drinks"
-    description="Enjoy delicious coffee prepared fresh for every order."
-/>
+## CSS Grid
+
+CSS Grid was used for sections containing multiple cards.
+
+For example, the pricing section uses a responsive three-column grid on larger screens.
+
+Example:
+
+```html
+<div class="grid gap-6 md:grid-cols-3">
+    ...
+</div>
 ```
 
-### Sample: `button.blade.php` (with variants)
+On smaller screens, the cards automatically stack so that the content remains readable.
 
-```blade
-@props(['href' => '#', 'variant' => 'primary'])
+## User Experience (UX)
 
-@php
-    $variantClasses = match ($variant) {
-        'secondary' => 'border-2 border-orange-500 text-orange-600 hover:bg-orange-500 hover:text-white',
-        'white'     => 'bg-white text-orange-600 hover:bg-orange-50 shadow-lg',
-        default     => 'bg-orange-500 text-white hover:bg-orange-600 shadow-lg',
-    };
-@endphp
+Responsive design is important because users do not always access websites using a desktop computer.
 
-<a href="{{ $href }}" {{ $attributes->merge(['class' => 'inline-block px-7 py-3.5 font-semibold rounded-full transition duration-300 ' . $variantClasses]) }}>
-    {{ $slot }}
-</a>
-```
+While developing this project, I had to check how the website looked and worked on different screen sizes.
+
+I paid attention to:
+
+* Navigation
+* Text readability
+* Button sizes
+* Card spacing
+* Image sizes
+* Section spacing
+* Mobile menu behavior
+
+This helped make the website easier to use on different devices.
 
 ---
 
-## 7. User Interface Design
+# 4. Tailwind CSS
 
-### Color Palette
+Tailwind CSS was used as the main styling framework of the project.
 
-| Color | Hex | Usage |
-|-------|-----|-------|
-| Orange 500 | `#f97316` | Primary brand color — buttons, accents, badges |
-| Orange 600 | `#ea580c` | Button hover state |
-| Orange 50 | `#fff7ed` | Warm section backgrounds (hero, testimonials) |
-| Orange 100 | `#ffedd5` | Feature icon backgrounds, avatar backgrounds |
-| Gray 900 | `#111827` | Page headings, footer background |
-| Gray 700 | `#374151` | Navbar links |
-| Gray 600 | `#4b5563` | Body text, descriptions |
-| Gray 100 | `#f3f4f6` | Card hover borders |
-| White | `#ffffff` | Cards, navbar background |
-| Yellow 400 | `#facc15` | Star ratings in testimonials |
+## Utility-First CSS
 
-The warm orange palette was chosen to reflect the cozy, welcoming atmosphere of a coffee shop and food business — energetic and inviting without being overwhelming.
+Tailwind CSS provides utility classes that can be directly added to HTML and Blade elements.
 
-### Typography
+Instead of creating many separate CSS classes, I used utility classes for:
 
-| Element | Tailwind Classes | Size |
-|---------|-----------------|------|
-| Hero Heading | `text-4xl sm:text-5xl lg:text-6xl font-extrabold` | 36px – 60px |
-| Section Heading | `text-3xl sm:text-4xl font-extrabold` | 30px – 36px |
-| Card Heading | `text-lg sm:text-xl font-bold` | 18px – 20px |
-| Body Text | `text-sm sm:text-base text-gray-600` | 14px – 16px |
-| Badges | `text-sm font-semibold uppercase tracking-wider` | 14px |
-| Price | `text-4xl font-extrabold text-gray-900` | 36px |
+* Colors
+* Spacing
+* Font sizes
+* Borders
+* Shadows
+* Rounded corners
+* Flexbox
+* Grid
+* Responsive layouts
+* Hover effects
+* Transitions
 
-The font stack uses the browser default (`Arial, Helvetica, sans-serif`) for readability across all devices.
+For example:
 
-### Iconography
+```html
+<div class="rounded-3xl bg-white/40 p-7 shadow-lg backdrop-blur-2xl">
+    ...
+</div>
+```
 
-Emoji icons were used throughout the project for visual appeal without requiring an icon library:
+This creates a rounded glass-style card with padding, shadow, and background effects.
 
-- ☕ Coffee | 🧋 Milk Tea | 🍔 Burger | 🍚 Rice | 🍟 Fries | 🥤 Milkshake | 🌭 Hotdog | 🍓 FruiTea
-- ✓ Checkmark (pricing features) | ★ Stars (testimonial rating) | 📍 Location | 🕙 Hours | 📞 Phone
+## Advantages of Tailwind CSS
 
-### Button Styles
+Tailwind CSS made the development process easier because I could make quick changes directly in the Blade files.
 
-Three button variants were implemented via the `<x-button>` component:
+Some advantages I experienced were:
 
-1. **Primary:** `bg-orange-500 text-white hover:bg-orange-600` — main CTA actions
-2. **Secondary:** `border-2 border-orange-500 text-orange-600 hover:bg-orange-500 hover:text-white` — alternative actions
-3. **White:** `bg-white text-orange-600 hover:bg-orange-50` — used on the orange CTA section background
+* Easy responsive styling.
+* Faster UI adjustments.
+* Consistent spacing.
+* Easy hover effects.
+* Easy layout changes.
+* Less custom CSS needed.
+* Simple responsive breakpoints.
 
-### Card Design
+## Responsive Utility Classes
 
-Cards follow a consistent pattern:
-- `rounded-2xl` — modern, friendly rounded corners
-- `shadow-md` default + `hover:shadow-xl` — subtle elevation on hover
-- `border border-gray-100` — light border for definition on white backgrounds
-- `transition duration-300` — smooth hover animation
+I used responsive utility classes to change the design depending on the screen size.
 
-### Layout Consistency
+Example:
 
-- **Max width:** All sections use `max-w-7xl mx-auto` to center content with consistent margins
-- **Padding:** `px-4 sm:px-6 lg:px-8` — consistent horizontal padding across all sections
-- **Vertical rhythm:** `py-16 sm:py-20` — consistent section spacing
-- **Section headers:** Every section uses the same label → heading → description pattern
+```html
+<h2 class="text-3xl sm:text-4xl lg:text-5xl">
+    GOOD FOOD, GOOD MOOD!
+</h2>
+```
 
-These design choices ensure the page feels cohesive and professional, improving user trust and readability.
+The heading becomes larger on bigger screens.
+
+Another example:
+
+```html
+<div class="grid gap-6 md:grid-cols-3">
+    ...
+</div>
+```
+
+This changes the layout into three columns on medium screens and larger.
+
+## Component Styling
+
+Tailwind classes were also used inside the Blade Components.
+
+For example, the project uses classes such as:
+
+```text
+rounded-3xl
+shadow
+border
+backdrop-blur-2xl
+transition
+hover:-translate-y-2
+```
+
+These classes were used to create the rounded glass-style cards and interactive hover effects.
 
 ---
 
-## 8. Folder Structure
+# 5. Blade Components
 
+## What are Blade Components?
+
+Blade Components are reusable parts of a Laravel application.
+
+Instead of putting the entire website inside one Blade file, the interface can be divided into smaller components.
+
+For this project, different parts of the website were separated into Blade Components.
+
+## Blade Components Used
+
+```text
+resources/views/components/
+├── navbar.blade.php
+├── hero.blade.php
+├── feature-card.blade.php
+├── pricing-card.blade.php
+├── testimonial-card.blade.php
+├── button.blade.php
+└── footer.blade.php
 ```
+
+Additional section components were also created:
+
+```text
+resources/views/components/
+├── features.blade.php
+├── menu.blade.php
+├── pricing.blade.php
+├── testimonials.blade.php
+└── cta.blade.php
+```
+
+## Why Reusable Components Improve Maintainability
+
+Reusable components make the project easier to organize and update.
+
+For example, the project has a reusable button component:
+
+```blade
+<x-button>
+    Explore Menu
+</x-button>
+```
+
+Instead of writing the same button code repeatedly, the button component can be reused in different sections.
+
+If the button design needs to be changed later, it can be updated in the component.
+
+## Modular UI Development
+
+Using components helped me:
+
+* Keep the code organized.
+* Separate different sections.
+* Reuse UI elements.
+* Make changes more easily.
+* Keep the home page cleaner.
+* Understand Laravel's component-based structure.
+
+The main page uses components such as:
+
+```blade
+<x-navbar />
+
+<x-hero />
+
+<x-features />
+
+<x-menu />
+
+<x-pricing />
+
+<x-testimonials />
+
+<x-cta />
+
+<x-footer />
+```
+
+## Blade Components Folder
+
+![Blade Components Folder](screenshots/blade-components-folder.png)
+
+---
+
+# 6. User Interface Design
+
+The design was created specifically for a coffee and food business.
+
+I wanted the website to have a warm, modern, and clean appearance while still matching the food and coffee theme.
+
+## Color Palette
+
+The main colors used in the interface are:
+
+* Orange
+* Cream
+* White
+* Light beige
+* Dark brown
+
+Orange is mainly used for buttons, highlights, and important elements.
+
+Cream and white are used for backgrounds.
+
+Dark brown is used for text and darker sections.
+
+Keeping the color palette limited helped make the different sections look consistent.
+
+## Typography
+
+The website uses clean and readable typography.
+
+Large and bold text was used for major headings such as:
+
+```text
+GOOD FOOD, GOOD MOOD!
+```
+
+Smaller text was used for descriptions and supporting information.
+
+Responsive text classes were also used so that headings would not become too large on mobile devices.
+
+## Iconography
+
+Simple icons were used for interface elements.
+
+The mobile navigation uses a hamburger icon which changes into a close icon when the menu is opened.
+
+## Button Styles
+
+The buttons use a consistent rounded style.
+
+Examples include:
+
+* Explore Menu
+* Contact Us
+* Choose Starter
+* Choose Best Seller
+* Choose Premium
+
+The primary buttons use orange backgrounds, while secondary buttons use an outlined orange style.
+
+Hover transitions were also added to make the buttons feel more interactive.
+
+## Card Design
+
+Cards are used for:
+
+* Features
+* Pricing
+* Testimonials
+
+The card design uses:
+
+* Rounded corners
+* Soft shadows
+* Borders
+* Glass-style backgrounds
+* Hover effects
+* Consistent spacing
+
+The feature cards also use actual images to make the section more connected to the business.
+
+## Layout Consistency
+
+The same visual style was maintained throughout the website.
+
+The design uses:
+
+* Consistent spacing
+* Consistent typography
+* Orange accent colors
+* Rounded elements
+* Similar card styles
+* Consistent buttons
+* Responsive layouts
+
+This helps the website feel like one complete design.
+
+---
+
+# 7. Folder Structure
+
+The project follows the Laravel folder structure and also includes folders required for the activity.
+
+```text
 week05-product-landing-page/
 │
-├── app/                          Laravel application logic
-│   ├── Http/Controllers/         Route controllers
-│   ├── Models/                   Eloquent models
-│   └── Providers/                Service providers
-│
-├── resources/
-│   ├── views/
-│   │   ├── layouts/
-│   │   │   └── app.blade.php     Main layout (head, @vite, @yield)
-│   │   ├── components/           Reusable Blade Components
-│   │   │   ├── navbar.blade.php
-│   │   │   ├── hero.blade.php
-│   │   │   ├── feature-card.blade.php
-│   │   │   ├── features.blade.php
-│   │   │   ├── menu.blade.php
-│   │   │   ├── pricing-card.blade.php
-│   │   │   ├── pricing.blade.php
-│   │   │   ├── testimonial-card.blade.php
-│   │   │   ├── testimonials.blade.php
-│   │   │   ├── cta.blade.php
-│   │   │   ├── button.blade.php
-│   │   │   └── footer.blade.php
-│   │   └── pages/
-│   │       └── home.blade.php    Home page (uses all components)
-│   ├── css/
-│   │   └── app.css               Global styles + Tailwind import
-│   └── js/
-│       ├── app.js                Mobile menu JavaScript
-│       └── bootstrap.js          Axios setup
+├── app/
+├── bootstrap/
+├── config/
+├── database/
 │
 ├── public/
-│   ├── build/                    Compiled Vite assets (CSS + JS)
 │   └── images/
-│       └── storefront.jpg        Coffee Break storefront photo
+│
+├── resources/
+│   ├── css/
+│   │   └── app.css
+│   │
+│   ├── js/
+│   │   └── app.js
+│   │
+│   └── views/
+│       ├── layouts/
+│       │   └── app.blade.php
+│       │
+│       ├── components/
+│       │   ├── navbar.blade.php
+│       │   ├── hero.blade.php
+│       │   ├── feature-card.blade.php
+│       │   ├── features.blade.php
+│       │   ├── menu.blade.php
+│       │   ├── pricing-card.blade.php
+│       │   ├── pricing.blade.php
+│       │   ├── testimonial-card.blade.php
+│       │   ├── testimonials.blade.php
+│       │   ├── cta.blade.php
+│       │   ├── button.blade.php
+│       │   └── footer.blade.php
+│       │
+│       └── pages/
+│           └── home.blade.php
 │
 ├── routes/
-│   └── web.php                   Route definitions
-│
-├── screenshots/                  Project screenshots for submission
-│   └── README.md
-│
-├── documentation/                Before/after comparison and docs
-│   └── README.md
-│
-├── vite.config.js                Vite + Laravel + Tailwind v4 config
-├── package.json                  Node dependencies
-└── README.md                     This file
+├── screenshots/
+├── documentation/
+├── tests/
+├── composer.json
+├── package.json
+├── vite.config.js
+└── README.md
 ```
 
-### Purpose of Each Folder
+## `resources/views/layouts`
 
-| Folder | Purpose |
-|--------|---------|
-| `resources/views/layouts` | Contains `app.blade.php` — the master layout that all pages extend. Includes `<head>`, Vite asset loading, and `@yield('content')`. |
-| `resources/views/components` | All reusable Blade Components. Each file is one self-contained UI element that can be used with `<x-component-name />` syntax. |
-| `resources/views/pages` | Actual page views. `home.blade.php` extends the layout and assembles all components in order. |
-| `public` | Web-accessible files. Contains compiled CSS/JS in `public/build/` and static images in `public/images/`. |
-| `screenshots` | Contains screenshots of the finished landing page for documentation and portfolio purposes. |
-| `documentation` | Contains before-and-after comparisons and detailed UI documentation. |
+This folder contains the main Blade layout.
+
+```text
+resources/views/layouts/
+└── app.blade.php
+```
+
+The layout contains the main HTML structure, page title, and Vite asset loading.
+
+## `resources/views/components`
+
+This folder contains the reusable Blade Components used throughout the website.
+
+Examples include:
+
+```text
+navbar.blade.php
+hero.blade.php
+feature-card.blade.php
+pricing-card.blade.php
+testimonial-card.blade.php
+button.blade.php
+footer.blade.php
+```
+
+## `resources/views/pages`
+
+This folder contains the main pages of the website.
+
+The main page is:
+
+```text
+resources/views/pages/
+└── home.blade.php
+```
+
+The home page combines the different components into one complete landing page.
+
+## `public`
+
+The `public` folder contains files that can be accessed by the website.
+
+The project uses:
+
+```text
+public/images/
+```
+
+for the logo, storefront image, food images, feature images, and customer image.
+
+## `screenshots`
+
+This folder contains screenshots documenting the website and the development process.
+
+## `documentation`
+
+This folder contains supporting documentation and the before-and-after comparison materials.
 
 ---
 
-## 9. Screenshots
+# 8. Screenshots
 
-> **Note:** Screenshots were captured using Chrome DevTools at standard breakpoints.
+The following screenshots document the different parts of the responsive landing page and the development process.
 
-### Desktop View (1440px)
-![Desktop View](screenshots/desktop.png)
+## Desktop View
 
-### Tablet View (768px)
-![Tablet View](screenshots/tablet.png)
+![Desktop View](screenshots/desktop-view.png)
 
-### Mobile View (375px)
-![Mobile View](screenshots/mobile.png)
+The desktop screenshot shows the landing page in a large-screen layout.
 
-### Navigation Bar
-![Navbar](screenshots/navbar.png)
+## Tablet View
 
-### Hero Section
-![Hero](screenshots/hero.png)
+![Tablet View](screenshots/tablet-view.png)
 
-### Features Section
-![Features](screenshots/features.png)
+The tablet screenshot shows how the layout adjusts for a medium-sized screen while keeping the content organized and readable.
 
-### Product Showcase / Menu Section
-![Menu](screenshots/menu.png)
+## Mobile View
 
-### Pricing Section
-![Pricing](screenshots/pricing.png)
+![Mobile View](screenshots/mobile-view.png)
 
-### Testimonials Section
-![Testimonials](screenshots/testimonials.png)
+The mobile screenshot shows the responsive layout on a smaller screen, including the mobile navigation and vertically arranged content.
 
-### Footer
+## Navigation Bar - Desktop
+
+![Navigation Bar Desktop](screenshots/navigation-bar-web.png)
+
+This screenshot shows the full-width navigation bar on the desktop version.
+
+## Navigation Bar - Mobile
+
+![Navigation Bar Mobile](screenshots/navigation-bar-mobile.png)
+
+This screenshot shows the responsive mobile navigation with the hamburger menu.
+
+## Hero Section
+
+![Hero Section](screenshots/hero-section.png)
+
+This screenshot shows the main hero section with the business name, main headline, description, buttons, and storefront background.
+
+## Features Section - 1
+
+![Features Section 1](screenshots/features-section1.png)
+
+This screenshot shows the first part of the features section with the feature cards and images.
+
+## Features Section - 2
+
+![Features Section 2](screenshots/features-section2.png)
+
+This screenshot shows the continuation of the features section and its responsive card layout.
+
+## Pricing Section - 1
+
+![Pricing Section 1](screenshots/pricing-section1.png)
+
+This screenshot shows the first part of the pricing section with the available pricing plans.
+
+## Pricing Section - 2
+
+![Pricing Section 2](screenshots/pricing-section2.png)
+
+This screenshot shows the second view of the pricing section and its responsive layout.
+
+## Testimonials - 1
+
+![Testimonials 1](screenshots/testimonials1.png)
+
+This screenshot shows the customer testimonials section and review content.
+
+## Testimonials - 2
+
+![Testimonials 2](screenshots/testimonials2.png)
+
+This screenshot shows the continuation of the testimonials section.
+
+## Footer
+
 ![Footer](screenshots/footer.png)
 
-### Blade Components Folder
-![Components Folder](screenshots/components-folder.png)
+This screenshot shows the footer containing the business information, navigation links, social media links, contact details, and copyright information.
 
-### GitHub Repository
-![GitHub Repository](screenshots/github-repo.png)
+## Blade Components Folder
+
+![Blade Components Folder](screenshots/blade-components-folder.png)
+
+This screenshot shows the Blade Components folder used to organize the reusable components of the project.
+
+## GitHub Repository
+
+The GitHub repository screenshot will be added after the final repository setup and push.
+
+Save the screenshot inside the `screenshots` folder as:
+
+```text
+github-repository.png
+```
+
+Then add it using:
+
+![GitHub Repository](screenshots/github-repository.png)
 
 ---
 
-## 10. Before & After
+# 9. Design Requirements
 
-### Before
-The project started as a default Laravel installation with no custom views or styling. All sections were planned as wireframe sketches showing the intended layout.
+The project follows a modern and consistent design approach.
 
-![Before](documentation/before.png)
+The design uses:
 
-### After
-The finished landing page is a fully responsive, visually polished product page with consistent branding, component-based architecture, and smooth interactions.
+* A limited and harmonious color palette.
+* Consistent spacing.
+* Readable typography.
+* Rounded cards and buttons.
+* Responsive layouts.
+* Clear visual hierarchy.
+* Sufficient text contrast.
+* Hover effects.
+* Simple transitions and animations.
 
-![After](documentation/after.png)
+The interface was designed specifically for **Coffee Break By: Maus Foodhouse atbp.**
 
-See the `documentation/` folder for detailed before-and-after comparison images.
+I did not directly copy an existing website. The layout, colors, sections, and styling were adjusted to fit the identity of the business.
 
 ---
 
-## 11. Getting Started
+# 10. Before-and-After Comparison
 
-### Prerequisites
+The interface went through several improvements during development. The comparison below shows the difference between the early version and the final polished interface.
 
-- PHP 8.2+
-- Composer
-- Node.js 20+
-- XAMPP or Laravel Herd
+## Before
 
-### Installation
+The initial version focused more on the basic structure and placement of the website content.
+
+![Before Design](documentation/before-design.png)
+
+The early version needed improvements in:
+
+- Visual hierarchy
+- Spacing
+- Navigation
+- Card styling
+- Responsive behavior
+- Overall presentation
+
+## After
+
+The final version has a more polished and responsive interface.
+
+![After Design](documentation/after-design.png)
+
+The final version includes:
+
+- Full-width navigation bar
+- Responsive mobile navigation
+- Hero section with storefront background
+- Food and drink images
+- Glass-style feature cards
+- Menu showcase
+- Three pricing plans
+- Customer testimonials
+- Call-to-action section
+- Responsive footer
+- Hover effects
+- Improved spacing
+- Desktop, tablet, and mobile layouts
+
+## My Development Experience
+
+During the development of the project, I made several changes after checking how the website looked and worked.
+
+One of the areas I improved was the navigation bar. I changed it into a full-width solid navigation bar instead of a floating or transparent header.
+
+I also worked on the mobile navigation so that the hamburger menu could open and close properly.
+
+For the features section, I added actual images for the six features. This made the section more visually appealing and connected it better to the food and beverage theme.
+
+I also adjusted the glass-style cards, spacing, buttons, and responsive layouts as I continued testing the website.
+
+The pricing and call-to-action sections were also adapted to fit the actual business.
+
+The original activity requirements included generic actions such as:
+
+- Register
+- Contact Sales
+- Start Free Trial
+
+Since my project is for a food business rather than a software service, I changed these into more realistic actions such as:
+
+- Explore Menu
+- Contact Us
+- Visit the Business
+
+This allowed the landing page to remain realistic while still following the purpose of the assignment.
+
+# 11. Responsive Testing
+
+The website was tested using different screen sizes.
+
+### Mobile
+
+```text
+375 × 812 px
+```
+
+### Tablet
+
+```text
+768 × 1024 px
+```
+
+### Desktop
+
+```text
+1440 × 900 px
+```
+
+During testing, I checked:
+
+* Navigation bar
+* Mobile menu
+* Hero section
+* Features section
+* Menu section
+* Pricing section
+* Testimonials
+* CTA section
+* Footer
+* Images
+* Buttons
+* Text spacing
+
+The goal was to make sure that the website remained usable and visually consistent on different screen sizes.
+
+---
+
+# 12. Main Website Sections
+
+The final landing page contains the following sections:
+
+## Navigation Bar
+
+Contains the business logo, navigation links, and action buttons.
+
+## Hero Section
+
+Introduces the business with the main message:
+
+**GOOD FOOD, GOOD MOOD!**
+
+It also includes buttons for exploring the menu and contacting the business.
+
+## Features Section
+
+Highlights the main things customers can expect from the business, including:
+
+* Freshly Prepared Drinks
+* Delicious Food
+* Affordable Prices
+* Filling Rice Meals
+* Variety of Drinks
+* Made for Every Craving
+
+## Menu Section
+
+Showcases different food and drink categories, including:
+
+* Coffee
+* Milk Tea
+* Milkshakes
+* Java Rice
+* Burgers
+* Fries
+
+## Pricing Section
+
+Contains three options:
+
+* **Starter - Quick Break**
+* **Best Seller - Coffee + Meal**
+* **Premium - Full Craving**
+
+Each pricing card includes a price, included food or drink options, and an action button.
+
+## Testimonials Section
+
+Contains customer feedback from:
+
+* Lian
+* Jil
+* Jel
+
+The section uses a shared customer photo together with the review boxes.
+
+## Call-to-Action Section
+
+Encourages visitors to:
+
+* Explore the menu.
+* Contact the business.
+* Visit the physical location.
+
+## Footer
+
+Contains business information, navigation links, social media links, contact details, and copyright information.
+
+---
+
+# 13. Technology Stack
+
+The project was developed using:
+
+* **Laravel**
+* **PHP**
+* **Blade**
+* **Tailwind CSS**
+* **JavaScript**
+* **Vite**
+* **HTML5**
+* **CSS3**
+* **Git**
+* **GitHub**
+
+---
+
+# 14. Business Information
+
+## Coffee Break By: Maus Foodhouse atbp.
+
+**Location:**
+Plaza of Magdalena, Laguna
+
+**Contact Number:**
+09398130110
+
+**Facebook:**
+[https://www.facebook.com/Coffeebreakbymau](https://www.facebook.com/Coffeebreakbymau)
+
+**Business Hours:**
+10 AM - 8 PM
+
+---
+
+# 15. GitHub Repository
+
+The project repository is available on GitHub:
+
+[https://github.com/JillianGutierrez/week05-product-landing-page](https://github.com/JillianGutierrez/week05-product-landing-page)
+
+Git was used throughout the development process to keep track of changes and improvements.
+
+The commits were organized into meaningful development stages, such as:
+
+1. Initialize Laravel project
+2. Add website images and assets
+3. Add project documentation
+4. Improve responsive navigation
+5. Refine hero section
+6. Improve features and menu sections
+7. Finalize pricing section
+8. Complete testimonials, CTA, and footer
+9. Add responsive screenshots
+10. Complete final documentation
+
+The purpose of using meaningful commits was to show the development process of the project.
+
+---
+
+# 16. Getting Started
+
+## Requirements
+
+Before running the project, make sure the following are installed:
+
+* PHP
+* Composer
+* Node.js
+* npm
+* XAMPP
+* Git
+
+## Installation
+
+Clone the repository:
 
 ```bash
-# Clone the repository
-git clone https://github.com/YOUR_USERNAME/week05-product-landing-page.git
+git clone https://github.com/JillianGutierrez/week05-product-landing-page.git
+```
+
+Go to the project folder:
+
+```bash
 cd week05-product-landing-page
+```
 
-# Install PHP dependencies
+Install Laravel dependencies:
+
+```bash
 composer install
+```
 
-# Install Node dependencies
+Install Node dependencies:
+
+```bash
 npm install
+```
 
-# Copy environment file
-cp .env.example .env
+Create the environment file:
+
+```bash
+copy .env.example .env
+```
+
+Generate the Laravel application key:
+
+```bash
 php artisan key:generate
+```
 
-# Build assets
-npm run build
+Run the Laravel development server:
 
-# Start the server
+```bash
 php artisan serve
 ```
 
-Then open [http://localhost:8000](http://localhost:8000) in your browser.
+In another terminal, run Vite:
+
+```bash
+npm run dev
+```
+
+After running the servers, open the Laravel development URL shown in the terminal.
 
 ---
 
-## 12. Technology Stack
+# 17. Learning Reflection
 
-| Technology | Version | Purpose |
-|-----------|---------|---------|
-| Laravel | 12.x | PHP web framework |
-| Tailwind CSS | 4.x | Utility-first CSS framework |
-| Vite | 7.x | Frontend build tool |
-| Laravel Vite Plugin | 2.x | Vite + Laravel integration |
-| @tailwindcss/vite | 4.x | Tailwind v4 Vite plugin |
-| Blade | (built-in) | Laravel templating engine |
+This project helped me understand how Laravel, Blade Components, and Tailwind CSS can work together to create a responsive website.
+
+One of the main things I learned was that designing a website is not only about making the desktop version look good. I also needed to check how the website behaved on tablet and mobile screens.
+
+I experienced some challenges while working on the responsive navigation. I had to make sure that the mobile hamburger menu could open and close properly and that the navigation was still easy to use on a smaller screen.
+
+I also learned how useful Blade Components are. Instead of putting the whole website in one large file, I separated the different parts of the website into components such as the navbar, hero, features, menu, pricing, testimonials, CTA, button, and footer.
+
+Another part of the project was improving the UI design. I used an orange and cream color palette, glass-style cards, rounded layouts, shadows, images, and hover effects to make the website match the coffee and food business.
+
+I also learned that a project requirement can sometimes be adapted depending on the type of website being created. The original activity included actions such as "Register," "Contact Sales," and "Start Free Trial." Since my project is for a food business, I changed these into more realistic actions such as "Explore Menu" and "Contact Us."
+
+Git also helped me understand the importance of version control. By creating meaningful commits, I was able to keep track of the different stages of development.
+
+Overall, this project gave me more experience with:
+
+* Responsive Web Design
+* Tailwind CSS
+* Laravel
+* Blade Components
+* UI/UX Design
+* JavaScript
+* Git and GitHub
+* Project Organization
+* Documentation
 
 ---
 
-## 13. Sections Implemented
+# 18. Conclusion
 
-| Section | Component | Status |
-|---------|-----------|--------|
-| Navigation Bar | `navbar.blade.php` | ✅ Complete |
-| Hero Section | `hero.blade.php` | ✅ Complete |
-| Features Section | `features.blade.php` + `feature-card.blade.php` | ✅ Complete (6 features) |
-| Product Showcase | `menu.blade.php` | ✅ Complete (8 menu items) |
-| Pricing Section | `pricing.blade.php` + `pricing-card.blade.php` | ✅ Complete (3 plans) |
-| Testimonials | `testimonials.blade.php` + `testimonial-card.blade.php` | ✅ Complete (3 reviews) |
-| Call-to-Action | `cta.blade.php` | ✅ Complete |
-| Footer | `footer.blade.php` | ✅ Complete |
+The **Coffee Break By: Maus Foodhouse atbp. Product Landing Page** demonstrates the use of Laravel, Blade Components, Tailwind CSS, JavaScript, Vite, and responsive web design.
+
+The final website includes:
+
+* Responsive Navigation Bar
+* Hero Section
+* Features Section
+* Menu Showcase
+* Pricing Section
+* Testimonials
+* Call-to-Action Section
+* Footer
+
+The project was designed to provide a professional online presentation for a real local food and beverage business.
+
+Through this activity, I was able to practice responsive design, reusable components, Tailwind CSS, UI design, Git version control, and project documentation.
+
+The project also helped me understand that a good website needs to consider both appearance and usability, especially across different screen sizes.
 
 ---
 
-## 14. License
+# 19. Author
 
-This project was created for academic purposes as part of ITST 302 – Client-Server Technologies.
+**Jillian Gutierrez**
 
-© 2026 Coffee Break By: Maus Foodhouse atbp.
+**Course:** ITST 302
+
+**Activity:** Week 5 - Product Landing Page
+
+**GitHub Repository:**
+
+[https://github.com/JillianGutierrez/week05-product-landing-page](https://github.com/JillianGutierrez/week05-product-landing-page)
+
+```
